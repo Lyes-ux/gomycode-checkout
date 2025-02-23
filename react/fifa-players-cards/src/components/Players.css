@@ -1,0 +1,28 @@
+body{
+    background-color: aqua;
+}
+.player-card {
+    width: 18rem;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(93, 130, 182, 0.836);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .player-card img {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .player-card {
+    background-color: #1b68b9;
+  }
