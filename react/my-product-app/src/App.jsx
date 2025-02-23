@@ -1,32 +1,38 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Container, Card, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import ProductName from "./components/Name";
+import ProductPrice from "./components/Price";
+import ProductDescription from "./components/Description";
+import ProductImage from "./components/Image";
+import product from "./product";
 
 function App() {
+  const name = "Lyes La3ziz";
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Container>
+      <Row className="justify-content-center ">
+        <Col md={6}>
+          <Card>
+            <Card.Body>
+              <ProductName name={product.name}/>
+              <ProductPrice price={product.price}/>
+              <ProductDescription description={product.description}/>
+              <ProductImage image={product.image}/>
+            </Card.Body>
+          </Card>
+          <div className="mt-3">
+            {name ? (
+              <>
+                <p>SALAM 3LIKOM !!!, {name}!!!!!</p>
+              </>
+            ) : (
+              <p>SALAM !!</p>
+            )}
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
