@@ -14,7 +14,7 @@ function App() {
     { title: 'Ip Man', rating: 6.2 },
     { title: 'Les Aventuriers de l Arche perdue', rating: 7.6},
     { title: 'Baby Cart la saga', rating: 4.2},
-    {title: 'Léon', rating: 5.1}
+    {title: 'Leon', rating: 5.1}
   ]);
 
 

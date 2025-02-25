@@ -8,7 +8,7 @@ const nameSchema = Yup.string()
   .max(42, "the name must be at most 42 characters");
 const issueReportValidationSchema = Yup.object({
   name: nameSchema,
-  subjects: Yup.array(Yup.string("subjects must be string"))
+  adresse: Yup.array(Yup.string("subjects must be string"))
     .required()
     .min(1, "At least 1 subject must be specified")
     .max(4, "At most 4 subjects must be specified"),
@@ -31,7 +31,7 @@ function App() {
       <Formik
         initialValues={{
           name: "",
-          subjects: [""],
+          adresse: [""],
           email: "",
           message: "",
           serverDetails: {
