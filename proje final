@@ -1,0 +1,86 @@
+# **Full-Stack MERN Final Project Specification Document**
+
+## **1. Project Overview**
+
+- **Project Name:** Site de location de courte durée
+- **Short Description:** _(Briefly describe what your project does)_  
+  Ce projet est un site de location de courte durée qui permet aux utilisateurs de trouver et réserver des logements. Les hôtes peuvent publier leurs annonces avec des informations détaillées sur le logement (prix, localisation, équipements...), tandis que les voyageurs peuvent rechercher des logements en fonction de leurs critères.
+
+## **2. Group Members**
+
+(Maximum 3 students)
+
+| Name | Email                  | GitHub Profile |
+| ---- | ---------------------- | -------------- |
+| Lyes | eldjadjilyes@gmail.com | Lyes-ux        |
+
+## **3. Selected Theme**
+
+_(Choose one by marking an "X")_
+
+- [ ] **Task Management Application**
+- [ ] **E-Commerce Website**
+- [ ] **Real-time Chat Application**
+- [ ] **Book Recommendation App**
+- [x] **MERN Application**
+
+## **4. Features & Functionalities**
+
+_(List all the key features your project will include)_
+
+### **Frontend Features**
+
+-Page d'accueil(page principale) avec recherche de logements par filtres (localisation, prix, dates).
+-Pages utilisateur avec profil, gestion des réservations, et gestion des annonces.
+-Page d'annonce avec description, photos, et disponibilité.
+-Formulaire de création d'annonce pour les hôtes( dans une admin dashboard).
+-Formulaire de réservation pour les utilisateurs.
+-Système de notations,avis et commentaires pour les logements et les hôtes.
+
+### **Backend Features**
+
+-API pour la gestion des utilisateurs (inscription, connexion, modification de profil).
+-API pour la gestion des annonces (création, modification, suppression).
+-API pour la gestion des réservations (création, annulation, visualisation).
+-Gestion de la base de données MongoDB pour les utilisateurs, les annonces, et les réservations.
+
+### **Additional Features (if any)**
+
+_(E.g., payment integration, real-time notifications, third-party APIs, etc.)_  
+-Intégration de Openstreetmap pour afficher les annonces sur une carte.
+
+## **5. Technologies Used**
+
+_(List the primary technologies you will use in your project)_
+
+- **Frontend:** React, Tailwind, Daisy ui
+- **Backend:** Node js, Express, Mongoose
+- **Database:** Mongo DB
+- **Additional Libraries/Tools:**
+
+## **6. Project Milestones & Timeline**
+
+_(Outline your estimated timeline for completing each major part of the project)_
+
+| Milestone             | Expected Completion Date   |
+| --------------------- | -------------------------- |
+| Project Setup         | 2 jours (01/03) (03/03)    |
+| Frontend Development  | 1 semaine (04/03) (12/03)  |
+| Backend Development   | 2 semaines (12/03) (25/03) |
+| Integration & Testing | 4 jours (26/03) (30/03)    |
+| Final Deployment      | 1 jour (31/03)             |
+
+## **7. Additional Notes**
+
+_(Any extra information about the project)_
+
+-Règles de la maison :Veuillez respecter les règles de la maison, telles que le non-fumeur à l'intérieur et la limitation du bruit après 22h.
+
+-Arrivée/Départ : L'arrivée est possible après 15h et le départ avant 11h.
+
+-Instructions de Check-in : Le check-in se fait via une boîte à clé sécurisée située à côté de la porte d'entrée.
+
+-Accès aux commodités : Vous avez accès à la piscine, à la salle de sport et au jardin.
+Restrictions spécifiques : Les animaux de compagnie ne sont pas autorisés dans cet appartement.
+
+-Restrictions spécifiques : Les animaux de compagnie ne sont pas autorisés dans cet appartement.
