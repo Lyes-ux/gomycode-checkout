@@ -1,0 +1,160 @@
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #18da18, #0f3f03);
+}
+
+
+div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+}
+
+
+h1, h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a58c7;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #fafafa;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(10px);
+}
+
+span {
+  font-size: 1.1rem;
+  cursor: pointer;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+
+span.completed {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+button {
+  background-color: #2dc91f;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #124e0a;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
+
+button.edit {
+  background-color: #ff9800;
+  color: white;
+  margin-left: 10px;
+}
+
+button.edit:hover {
+  background-color: #e65100;
+}
+
+li.completed {
+  background-color: #d3ffd3;
+  opacity: 0.7;
+}
+
+.alert {
+  padding: 10px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.alert.success {
+  background-color: #4caf50;
+}
+
+.alert.error {
+  background-color: #f44336;
+}
