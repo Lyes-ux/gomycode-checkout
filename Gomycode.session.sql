@@ -1,33 +1,6 @@
-use gomycode;
-DROP TABLE IF EXISTS CLIENTS;
-CREATE TABLE IF NOT EXISTS CLIENTS (
-    Client_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Nom VARCHAR(50) NOT NULL,
-    Adresse VARCHAR(100),
-    Telephone VARCHAR(15) UNIQUE
-);
-DROP TABLE IF EXISTS PRODUIT;
-CREATE TABLE IF NOT EXISTS PRODUIT (
-    Produit_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Nom VARCHAR(50) NOT NULL,
-    Prix DECIMAL(10, 2) NOT NULL
-);
-DROP TABLE IF EXISTS COMMANDES;
-CREATE TABLE IF NOT EXISTS COMMANDES (
-    Commande_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Client_ID INT,
-    Date_Commande DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (Client_ID) REFERENCES CLIENTS(Client_ID)
-);
-DROP TABLE IF EXISTS DETAILS_COMMANDE;
-CREATE TABLE IF NOT EXISTS DETAILS_COMMANDE (
-    Commande_ID INT,
-    Produit_ID INT,
-    Quantite INT,
-    PRIMARY KEY (Commande_ID, Produit_ID),
-    FOREIGN KEY (Commande_ID) REFERENCES COMMANDES(Commande_ID),
-    FOREIGN KEY (Produit_ID) REFERENCES PRODUIT(Produit_ID)
-);
--- Ajout de la colonne Catégorie à la table PRODUIT
-ALTER TABLE PRODUIT
-ADD COLUMN Categorie VARCHAR(20);
+INSERT INTO customer (customer_id, customer_name, customer_tel)
+VALUES (
+    'customer_id:varchar',
+    'customer_name:varchar',
+    customer_tel:int
+  );
